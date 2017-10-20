@@ -268,6 +268,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 "use strict";
 /* unused harmony export router */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vue_components_RouterView_vue__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vue_components_RouterView_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__vue_components_RouterView_vue__);
 // import Vue from "vue";
 // import VueRouter from "vue-router";
 
@@ -275,10 +276,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 Vue.use(VueRouter);
 
-// const vcHome = (resolve) => import("../vue-components/Home.vue").then(resolve);
 var vcHome = function vcHome() {
   return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 7));
 };
+// const vcHome = require('../vue-components/Home.vue').default
 
 var routes = [{
   path: "/",
@@ -293,7 +294,7 @@ new Vue({
   el: "#app",
   router: router,
   render: function render(h) {
-    return h(__WEBPACK_IMPORTED_MODULE_0__vue_components_RouterView_vue__["a" /* default */]);
+    return h(__WEBPACK_IMPORTED_MODULE_0__vue_components_RouterView_vue___default.a);
   }
 });
 
@@ -301,17 +302,14 @@ new Vue({
 
 /***/ }),
 /* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_RouterView_vue__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7b7d3fb7_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_RouterView_vue__ = __webpack_require__(6);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-
+var __vue_script__ = __webpack_require__(5)
 /* template */
-
+var __vue_template__ = __webpack_require__(6)
 /* styles */
 var __vue_styles__ = null
 /* scopeId */
@@ -319,8 +317,8 @@ var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_RouterView_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7b7d3fb7_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_RouterView_vue__["a" /* default */],
+  __vue_script__,
+  __vue_template__,
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -345,7 +343,7 @@ if (false) {(function () {
   })
 })()}
 
-/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
+module.exports = Component.exports
 
 
 /***/ }),
@@ -353,13 +351,14 @@ if (false) {(function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
 //
 //
 
-/* harmony default export */ __webpack_exports__["a"] = ({
+/* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
   }
@@ -367,9 +366,8 @@ if (false) {(function () {
 
 /***/ }),
 /* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('router-view', {
     staticClass: "router-view"
@@ -377,12 +375,11 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
 }
 var staticRenderFns = []
 render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
+module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-7b7d3fb7", esExports)
+     require("vue-hot-reload-api").rerender("data-v-7b7d3fb7", module.exports)
   }
 }
 
