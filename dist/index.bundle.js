@@ -244,16 +244,14 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_main_scss__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_main_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_router_js__ = __webpack_require__(3);
 
 
+__webpack_require__(2);
 
+__webpack_require__(3);
 
 /***/ }),
 /* 2 */
@@ -263,18 +261,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export router */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vue_components_RouterView_vue__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vue_components_RouterView_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__vue_components_RouterView_vue__);
-// import Vue from "vue";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.router = undefined;
+
+var _RouterView = __webpack_require__(4);
+
+var _RouterView2 = _interopRequireDefault(_RouterView);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+Vue.use(VueRouter); // import Vue from "vue";
 // import VueRouter from "vue-router";
-
-
-
-Vue.use(VueRouter);
 
 var vcHome = function vcHome() {
   return __webpack_require__.e/* import() */(0).then(__webpack_require__.bind(null, 7));
@@ -294,11 +298,11 @@ new Vue({
   el: "#app",
   router: router,
   render: function render(h) {
-    return h(__WEBPACK_IMPORTED_MODULE_0__vue_components_RouterView_vue___default.a);
+    return h(_RouterView2.default);
   }
 });
 
-
+exports.router = router;
 
 /***/ }),
 /* 4 */
