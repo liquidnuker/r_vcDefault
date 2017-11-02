@@ -10,7 +10,7 @@
       }
     },
     mounted: function () {
-      console.log("Home.vue mounted");
+      console.log("Home-test.vue mounted");
     }
   }
 </script>
