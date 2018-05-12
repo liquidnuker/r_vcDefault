@@ -11,13 +11,19 @@
 @import "components/buttons";
 
 @import "vendor/mq"; 
-// @import "vendor/bulma/bulma.sass"; 
-@import "layout/grid";
+@import "vendor/bootstrap4/bootstrap-grid";
 
 // show the active breakpoint (_mq.scss)
 // ==================================================/
-@include mq-show-breakpoints;
+// @include mq-show-breakpoints;
 
 // show col-* grid borders (_grid.scss)
 // ==================================================/
-@include col-grid-border(#000);
+[class|="col"] {
+  border: 1px solid #000;
+}
+
+// temp
+body {
+  @extend %system_normal--300;
+}

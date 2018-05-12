@@ -1,6 +1,7 @@
 <template>
-  <div>
-    Home.vue
+  <div class="row no-gutters">
+    <div class="col-sm-3">Home.vue</div>
+    <div class="col-sm-9">39</div>
   </div>
 </template>
 <script>
